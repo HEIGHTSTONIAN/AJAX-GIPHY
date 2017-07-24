@@ -1,0 +1,10 @@
+li{
+  list-style-type: none;
+  display: inline-block;
+}
+input{
+  width: 400px;
+}
+.gifPost{
+  display: inline-block;
+}
