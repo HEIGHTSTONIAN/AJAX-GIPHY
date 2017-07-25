@@ -58,7 +58,7 @@ $(function(){
       /* enter your api key below */
         var APIkey = 'f1197fe12c78422db8080fcfa68e6d7c';
         var limit = 10;
-        var link = "http://api.giphy.com/v1/gifs/search?q="+searchTerm+"&api_key="+APIkey+"&limit="+limit;
+        var link = "https://api.giphy.com/v1/gifs/search?q="+searchTerm+"&api_key="+APIkey+"&limit="+limit;
         var xhr = $.get(link);
         xhr.done(foundImgs);
         xhr.fail(errorMessage);
