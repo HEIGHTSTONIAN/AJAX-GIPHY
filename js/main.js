@@ -20,6 +20,7 @@ $(function(){
     }
     /* e represents found data from api*/
     function foundImgs(e){
+      console.log(e);
       e.data.forEach(function(each, i){
         var wrapper = document.createElement('div');
         var h = document.createElement('h2');
@@ -61,6 +62,7 @@ $(function(){
         var link = "https://api.giphy.com/v1/gifs/search?q="+searchTerm+"&api_key="+APIkey+"&limit="+limit;
         var xhr = $.get(link);
         xhr.done(foundImgs);
+        console.log(foundImgs);
         xhr.fail(errorMessage);
     }
   function gridCreator(topics){
